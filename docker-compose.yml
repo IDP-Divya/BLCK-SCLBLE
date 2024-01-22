@@ -1,0 +1,10 @@
+version: '3'
+services:
+  ethereum-node:
+    image: ethereum/client-go
+    ports:
+      - "8545:8545"
+  web-interface:
+    image: my-ethereum-app-web
+    ports:
+      - "80:80"
